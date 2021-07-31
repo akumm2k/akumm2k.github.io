@@ -1,5 +1,10 @@
 body {
     background-color: white;
+    background-image: url(./images/bg.jpeg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 header {
@@ -51,7 +56,7 @@ p {
     color: #8a9194;
     margin: auto;
     padding: 0 0 0 0;
-    margin-left: 45%;
+    margin-left: 48%;
 }
 
 #projects a {
