@@ -16,7 +16,6 @@ let stack = {
 
 proj_nodes.forEach(proj => {
     proj.addEventListener('mouseover', () => {
-        console.log(proj.id);
         for (let tech of stack[proj.id]) 
             document.getElementById(tech).classList.add('hover');
     });
