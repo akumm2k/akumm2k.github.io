@@ -8,6 +8,7 @@ const log = console.log;
 
 let stack = {
     // check stack ids from index.html
+    // terminal is omitted
     'rbTree' : [ 'c-sharp', 'git', 'gitlab' ],
     'gauss' : [ 'python', 'gitlab' ],
     'diceRoller' : [ 'cpp', 'gitlab' ],
