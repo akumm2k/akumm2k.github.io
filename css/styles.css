@@ -1,5 +1,6 @@
 :root {
     --init-color: black;
+    --inv: 0;
 }
 
 body {
