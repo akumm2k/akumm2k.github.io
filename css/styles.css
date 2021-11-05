@@ -1,3 +1,7 @@
+:root {
+    --init-color: black;
+}
+
 body {
     margin: 1rem 20%;
 }
@@ -127,7 +131,20 @@ a:active {
     transition: all 0.5s;
 }
 
-.light-mode-body {
+@media only screen and (prefers-color-scheme: dark) {
+    :root {
+        --init-bg-color: black;
+        --inv: 1;
+    }
+}
+
+body {
+    background-color: var(--init-bg-color);
+    filter: invert(var(--inv));
+    transition: all 0.5s;
+}
+
+body.light-mode-body {
     background-color: white;
     filter: invert(0);
     transition: all 0.5s;

@@ -5,3 +5,9 @@ checkbox.addEventListener('change', () => {
     body.classList.toggle("dark-mode-body");
     body.classList.toggle("light-mode-body");
 });
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    // dark mode preference
+    checkbox.checked = true;
+    body.classList.toggle("dark-mode-body");
+}
