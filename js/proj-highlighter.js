@@ -1,4 +1,4 @@
-const proj_list = [ 'rbTree', 'gauss', 'diceRoller', 'portfolio' ];
+const proj_list = [ 'sudoku-solver', 'rbTree', 'gauss', 'diceRoller', 'portfolio' ];
 const proj_nodes = [];
 proj_list.forEach(proj => {
     proj_nodes.push(document.getElementById(proj));
@@ -9,6 +9,7 @@ const log = console.log;
 let stack = {
     // check stack ids from index.html
     // terminal is omitted
+    'sudoku-solver' : [ 'cpp', 'git', 'gitlab' ],
     'rbTree' : [ 'c-sharp', 'git', 'gitlab' ],
     'gauss' : [ 'python', 'gitlab' ],
     'diceRoller' : [ 'cpp', 'gitlab' ],
