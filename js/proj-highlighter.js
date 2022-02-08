@@ -1,4 +1,7 @@
-const proj_list = [ 'sudoku-solver', 'rbTree', 'gauss', 'diceRoller', 'portfolio' ];
+const proj_list = [ 
+    'crud-app', 'sudoku-solver', 'rbTree', 
+    'gauss', 'diceRoller', 'portfolio' 
+];
 const proj_nodes = [];
 proj_list.forEach(proj => {
     proj_nodes.push(document.getElementById(proj));
@@ -10,6 +13,7 @@ let stack = {
     // check stack ids from index.html
     // terminal is omitted
     'sudoku-solver' : [ 'cpp', 'git', 'gitlab' ],
+    'crud-app' : ['php', 'javascript', 'css3', 'html5', 'git'],
     'rbTree' : [ 'c-sharp', 'git', 'gitlab' ],
     'gauss' : [ 'python', 'gitlab' ],
     'diceRoller' : [ 'cpp', 'gitlab' ],
