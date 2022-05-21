@@ -1,10 +1,12 @@
-const yearsDiff = (d1, d2) => 
-    Math.floor(Math.abs((d1.getTime() - d2.getTime())) / (3600 * 24 * 1000 * 365));
-
-
-const birthDate = new Date("05/24/2002");
-let today = new Date();
-let years = yearsDiff(today, birthDate);
+const computeAge = () => {
+    let today = new Date();
+    let [year, date, month] = 
+        [today.getUTCFullYear(), today.getUTCDate(), today.getUTCMonth()]
+    age = year - 2002 
+    if (month < 5 || (month == 5 && date < 24))
+        age -= 1
+    return age
+}
 
 let aboutPara = document.querySelector("#about > p");
-aboutPara.textContent += ` I am ${years} years old.`
+aboutPara.textContent += ` I am ${computeAge()} years old.`
