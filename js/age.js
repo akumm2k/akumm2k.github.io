@@ -3,7 +3,7 @@ const computeAge = () => {
     let [year, date, month] = 
         [today.getUTCFullYear(), today.getUTCDate(), today.getUTCMonth()]
     age = year - 2002 
-    if (month < 5 || (month == 5 && date < 24))
+    if (month < 4 || (month == 4 && date < 24))
         age -= 1
     return age
 }
