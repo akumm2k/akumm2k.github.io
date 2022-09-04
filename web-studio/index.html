@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <title>Web Studio</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h1 {
+            margin: 0 20px;
+            padding: 20px;
+        }
+        ol.proj-list-hidden {
+            display: none;
+        }
+        ol.proj-list {
+            margin: auto;
+            padding: 0 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Studio</h1>
+    <ol class="proj-list-hidden">
+        <li>paginator</li>
+    </ol>
+
+    <script>
+        // update the hidden list to add linked project
+        // The following script adds the links to all the list items
+        const projListItems = document.querySelectorAll('ol.proj-list-hidden > li');
+        const newList = document.createElement('ol');
+
+        newList.className = 'proj-list';
+        projListItems.forEach(proj => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<a href="${proj.innerText}">${proj.innerText}</a>`;
+            newList.append(listItem);
+        });
+
+        const body = document.querySelector('body');
+        body.append(newList);
+    </script>
+</body>
+</html>
