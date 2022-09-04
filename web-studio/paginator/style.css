@@ -37,6 +37,7 @@ body {
 button:hover { 
     opacity: 0.8;
     transition: ease;
+    cursor: pointer;
 }
 button:active {
     filter: brightness(0.5);
