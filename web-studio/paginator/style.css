@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+.content {
+    width: 85%;
+    height: 450px;
+    margin: auto;
+    background: wheat;
+    z-index: 1;
+    position: relative;
+    top: 25px;
+    border-radius: 50px;
+}
+.btn-container {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(2, 1fr);
+    height: 500px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 90%;
+    z-index: 0;
+    border-radius: 50px;
+    overflow: hidden;
+}
+.btn-container > div {
+    width: 100%;
+    height: 100%;
+}
+button:hover { 
+    opacity: 0.8;
+    transition: ease;
+}
+button:active {
+    filter: brightness(0.5);
+}
+button {
+    border: none;
+}
+.up {
+    background: #8a2be2;
+}
+.down {
+    background: #333;
+}
+.content {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10rem;
+    text-align: center;
+}
+main {
+    margin-top: 15%;
+}

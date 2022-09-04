@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paginator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="btn-container">
+            <button class="up"></button>
+            <button class="down"></button>
+            <button class="down"></button>
+            <button class="up"></button>
+        </div>
+        <div class="content">0</div>
+    </main>
+    <script>
+        let num = 0;
+
+        const content = document.querySelector('.content');
+        const upBtns = document.querySelectorAll("button.up");
+        const downBtns = document.querySelectorAll("button.down");
+
+        downBtns.forEach(down => {
+            down.addEventListener('click', () => {
+                num++;
+                updateContent();
+            });
+        });
+        upBtns.forEach(up => {
+            up.addEventListener('click', () => {
+                if (num > 0) {
+                    num--;
+                    updateContent();
+                }
+            });
+        });
+
+        const updateContent = () => {
+            console.log(`updating content to ${num}`)
+            content.innerText = num; 
+        };
+    </script>
+</body>
+</html>
