@@ -1,32 +1,32 @@
-const proj_list = [ 
-    'crud-app', 'sudoku-solver', 'rbTree', 
-    'gauss', 'diceRoller', 'portfolio' 
-];
-const proj_nodes = [];
-proj_list.forEach(proj => {
-    proj_nodes.push(document.getElementById(proj));
-});
+const projNodes = document.querySelectorAll('ol.proj-list > li > a');
 
-const log = console.log;
-
-let stack = {
-    // check stack ids from index.html
+let projStack = {
+    // check projStack ids from index.html
     // terminal is omitted
     'sudoku-solver' : [ 'cpp', 'git', 'gitlab' ],
     'crud-app' : ['php', 'javascript', 'css3', 'html5', 'git'],
     'rbTree' : [ 'c-sharp', 'git', 'gitlab' ],
     'gauss' : [ 'python', 'gitlab' ],
     'diceRoller' : [ 'cpp', 'gitlab' ],
-    'portfolio' : [ 'javascript', 'html5', 'css3', 'git', 'github' ]
+    'portfolio' : [ 'javascript', 'html5', 'css3', 'git', 'github' ],
+    'web-studio' : [ 'javascript', 'html5', 'css3', 'git', 'github' ],
 }
 
-proj_nodes.forEach(proj => {
+Object.keys(projStack).forEach(project => {
+    const projElement = document.getElementById(project);
+    console.assert(
+        projElement !== undefined, 
+        `${project} is not present in html`
+    );
+});
+
+projNodes.forEach(proj => {
     proj.addEventListener('mouseover', () => {
-        for (let tech of stack[proj.id]) 
+        for (let tech of projStack[proj.id]) 
             document.getElementById(tech).classList.add('hover');
     });
     proj.addEventListener('mouseout', () => {
-        for (let tech of stack[proj.id]) 
+        for (let tech of projStack[proj.id]) 
             document.getElementById(tech).classList.remove('hover');
     });
 });
