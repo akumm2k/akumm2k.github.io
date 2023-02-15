@@ -30,7 +30,7 @@ header nav ul {
     padding-top: 1.3rem;
     list-style-type: none;
     display: flex;
-    float: right;  
+    float: right;
 }
 
 header nav ul li {
@@ -57,7 +57,7 @@ body {
     transition: filter ease 0.7s;
 }
 
-.icon-container i:hover, .icon-container svg:hover, .icon-container i.hover, 
+.icon-container i:hover, .icon-container svg:hover, .icon-container i.hover,
 .icon-container svg.hover {
     filter: contrast(1);
     filter: brightness(1);
@@ -184,4 +184,16 @@ body.light-mode-body {
         align-items: flex-end;
     }
 
+}
+
+/* de-emphasize underlines */
+ol.proj-list li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+ol.proj-list li a:hover {
+    text-decoration: underline;
+}
+ol.proj-list li {
+    margin: 5px 0;
 }
