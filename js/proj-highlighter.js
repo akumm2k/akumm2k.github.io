@@ -3,6 +3,8 @@ const projNodes = document.querySelectorAll('ol.proj-list > li > a');
 let projStack = {
     // check projStack ids from index.html
     // terminal is omitted
+    'reversi': ['java', 'github'],
+    'maze-runner-page-reader': ['python'],
     'sudoku-solver' : [ 'cpp', 'git', 'gitlab' ],
     'crud-app' : ['php', 'javascript', 'css3', 'html5', 'git'],
     'rbTree' : [ 'c-sharp', 'git', 'gitlab' ],
@@ -15,18 +17,18 @@ let projStack = {
 Object.keys(projStack).forEach(project => {
     const projElement = document.getElementById(project);
     console.assert(
-        projElement !== undefined, 
+        projElement !== undefined,
         `${project} is not present in html`
     );
 });
 
 projNodes.forEach(proj => {
     proj.addEventListener('mouseover', () => {
-        for (let tech of projStack[proj.id]) 
+        for (let tech of projStack[proj.id])
             document.getElementById(tech).classList.add('hover');
     });
     proj.addEventListener('mouseout', () => {
-        for (let tech of projStack[proj.id]) 
+        for (let tech of projStack[proj.id])
             document.getElementById(tech).classList.remove('hover');
     });
 });
