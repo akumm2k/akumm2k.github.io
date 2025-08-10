@@ -1,4 +1,3 @@
-"use strict";
 function calculateAge(birthday) {
     const today = new Date();
     const yearsSinceBirth = today.getUTCFullYear() - birthday.getUTCFullYear();
@@ -18,3 +17,4 @@ const aboutParagraph = document.querySelector('#about > p');
 if (aboutParagraph) {
     aboutParagraph.textContent += ` I am ${MY_AGE} years old.`;
 }
+export {};

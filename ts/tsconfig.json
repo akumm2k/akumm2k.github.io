@@ -6,12 +6,15 @@
     "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
 
+    "rootDir": "./src",
+    "outDir": "./dist",
+
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmitOnError": true,
+    "removeComments": true,
 
     /* Linting */
     "strict": true,

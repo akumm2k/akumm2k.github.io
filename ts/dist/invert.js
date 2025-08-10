@@ -1,4 +1,3 @@
-"use strict";
 const DARK_MODE_CHECKBOX = document.querySelector('#dark-mode-checkbox');
 const body = document.body;
 const DARK_MODE = 'dark-mode-body', LIGHT_MODE = 'light-mode-body';
@@ -9,7 +8,6 @@ if (DARK_MODE_CHECKBOX) {
     });
     if (window.matchMedia &&
         window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        // dark mode preference
         DARK_MODE_CHECKBOX.checked = true;
         body.classList.toggle(DARK_MODE);
     }
@@ -19,3 +17,4 @@ if (DARK_MODE_CHECKBOX) {
         body.classList.toggle(LIGHT_MODE);
     }
 }
+export {};
