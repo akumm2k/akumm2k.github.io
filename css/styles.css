@@ -160,16 +160,7 @@ body.light-mode-body {
     }
 
     header {
-        height: 6rem;
-    }
-
-    header nav ul {
-        display: flex;
-        width: 100%;
-        float: none !important;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem 0 0 0;
+        height: 4rem;
     }
 }
 
@@ -177,12 +168,6 @@ body.light-mode-body {
     body {
         margin: 1rem 1rem;
     }
-
-    header nav ul {
-        justify-content: space-around;
-        align-items: flex-end;
-    }
-
 }
 
 /* de-emphasize underlines */
