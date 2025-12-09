@@ -57,8 +57,8 @@ body {
     transition: filter ease 0.7s;
 }
 
-.icon-container i:hover, .icon-container svg:hover, .icon-container i.hover,
-.icon-container svg.hover {
+.icon-container i:hover, .icon-container svg:hover,
+.icon-container i.hover, .icon-container svg.hover {
     filter: contrast(1);
     filter: brightness(1);
     transition: filter 0.7s;
