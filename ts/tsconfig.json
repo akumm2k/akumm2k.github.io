@@ -15,6 +15,7 @@
     "moduleDetection": "force",
     "noEmitOnError": true,
     "removeComments": true,
+    "rewriteRelativeImportExtensions": true,
 
     /* Linting */
     "strict": true,
@@ -22,7 +23,7 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
   },
   "include": ["src"]
 }

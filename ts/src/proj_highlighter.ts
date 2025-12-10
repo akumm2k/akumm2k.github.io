@@ -1,5 +1,5 @@
-import { TOOLS } from './constants/tools';
-import { PROJECTS } from './constants/projects';
+import { TOOLS } from './constants/tools.ts';
+import { PROJECTS } from './constants/projects.ts';
 
 const PROJ_NODES: NodeListOf<HTMLAnchorElement> =
   document.querySelectorAll('ol.proj-list > li > a');

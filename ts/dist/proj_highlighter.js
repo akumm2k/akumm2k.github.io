@@ -1,5 +1,5 @@
-import { TOOLS } from './constants/tools';
-import { PROJECTS } from './constants/projects';
+import { TOOLS } from "./constants/tools.js";
+import { PROJECTS } from "./constants/projects.js";
 const PROJ_NODES = document.querySelectorAll('ol.proj-list > li > a');
 const PROJ_STACK = {
     [PROJECTS.REVERSI]: [TOOLS.JAVA, TOOLS.GITHUB],
