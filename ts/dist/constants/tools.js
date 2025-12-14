@@ -1,0 +1,16 @@
+export const TOOLS = {
+    JAVA: 'java',
+    JAVASCRIPT: 'javascript',
+    TYPESCRIPT: 'typescript',
+    PYTHON: 'python',
+    CSS3: 'css3',
+    HTML5: 'html5',
+    GIT: 'git',
+    C_SHARP: 'csharp',
+    GITLAB: 'gitlab',
+    GITHUB: 'github',
+    CPP: 'cpp',
+    PHP: 'php',
+    BASH: 'bash',
+    ZSH: 'zsh',
+};
