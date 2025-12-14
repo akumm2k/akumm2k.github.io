@@ -10,6 +10,7 @@ function calculateReadingTime() {
     const wordCount = text.split(/\s+/).length;
     return Math.max(1, Math.ceil(wordCount / READING_WPM));
 }
+// Update reading time on page load
 window.addEventListener('load', () => {
     const readingTime = calculateReadingTime();
     const readingTimeEl = document.getElementById('reading-time');
@@ -17,6 +18,7 @@ window.addEventListener('load', () => {
         readingTimeEl.textContent = readingTime + ' min read';
     }
 });
+// Scroll progress bar
 const PROGRESS_BAR = document.getElementById('scroll-progress');
 if (PROGRESS_BAR) {
     window.addEventListener('scroll', () => {
@@ -26,3 +28,4 @@ if (PROGRESS_BAR) {
     });
 }
 export {};
+//# sourceMappingURL=article.js.map
