@@ -16,4 +16,4 @@ jobs:
         with:
           root: .
           # Ignore generated/config/meta folders and Liquid includes (not valid standalone HTML)
-          blacklist: .git,.github,node_modules,_includes
+          blacklist: .git,.github,node_modules,_includes,_includes/*,_includes/**
