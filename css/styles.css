@@ -1,6 +1,7 @@
 :root {
     --init-color: black;
     --inv: 0;
+    --github-color: #004cff;
 }
 
 body {
@@ -15,6 +16,10 @@ header {
 h1 {
     display: inline;
     float: left;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 .about img {
@@ -43,6 +48,7 @@ body {
 
 .icon-container svg, .icon-container img {
     margin-right: 1rem;
+    margin-top: 0.8rem;
     width: 3rem;
     filter: contrast(0);
     filter: brightness(0);

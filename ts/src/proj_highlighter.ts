@@ -7,31 +7,29 @@ const PROJ_NODES: NodeListOf<HTMLAnchorElement> =
 const PROJ_STACK: Record<string, string[]> = {
   [PROJECTS.REVERSI]: [TOOLS.JAVA, TOOLS.GITHUB],
   [PROJECTS.MAZE_RUNNER_PAGE_READER]: [TOOLS.PYTHON],
-  [PROJECTS.SUDOKU_SOLVER]: [TOOLS.CPP, TOOLS.GIT, TOOLS.GITLAB],
+  [PROJECTS.SUDOKU_SOLVER]: [TOOLS.CPP, TOOLS.GITLAB],
   [PROJECTS.CRUD_APP]: [
     TOOLS.PHP,
     TOOLS.JAVASCRIPT,
     TOOLS.CSS3,
     TOOLS.HTML5,
-    TOOLS.GIT,
   ],
-  [PROJECTS.RB_TREE]: [TOOLS.C_SHARP, TOOLS.GIT, TOOLS.GITLAB],
+  [PROJECTS.RB_TREE]: [TOOLS.C_SHARP, TOOLS.GITLAB],
   [PROJECTS.GAUSS]: [TOOLS.PYTHON, TOOLS.GITLAB],
   [PROJECTS.DICE_ROLLER]: [TOOLS.CPP, TOOLS.GITLAB],
   [PROJECTS.PORTFOLIO]: [
     TOOLS.JAVASCRIPT,
     TOOLS.HTML5,
     TOOLS.CSS3,
-    TOOLS.GIT,
     TOOLS.GITHUB,
   ],
   [PROJECTS.WEB_STUDIO]: [
     TOOLS.JAVASCRIPT,
     TOOLS.HTML5,
     TOOLS.CSS3,
-    TOOLS.GIT,
     TOOLS.GITHUB,
   ],
+  [PROJECTS.DOTFILES]: [TOOLS.BASH, TOOLS.ZSH, TOOLS.GITHUB],
 };
 
 Object.keys(PROJ_STACK).forEach((project) => {
@@ -42,9 +40,11 @@ Object.keys(PROJ_STACK).forEach((project) => {
   );
 });
 
+const DEFAULT_TOOLS = [TOOLS.GIT];
+
 PROJ_NODES.forEach((proj) => {
   proj.addEventListener('mouseover', () => {
-    for (let tech of PROJ_STACK[proj.id]) {
+    for (let tech of PROJ_STACK[proj.id].concat(DEFAULT_TOOLS)) {
       const techElement = document.getElementById(tech);
       if (techElement !== null) {
         techElement.classList.add('hover');
@@ -52,7 +52,7 @@ PROJ_NODES.forEach((proj) => {
     }
   });
   proj.addEventListener('mouseout', () => {
-    for (let tech of PROJ_STACK[proj.id]) {
+    for (let tech of PROJ_STACK[proj.id].concat(DEFAULT_TOOLS)) {
       const techElement = document.getElementById(tech);
       if (techElement !== null) {
         techElement.classList.remove('hover');

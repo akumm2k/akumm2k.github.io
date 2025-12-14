@@ -8,4 +8,5 @@ export const PROJECTS = {
     DICE_ROLLER: 'diceRoller',
     PORTFOLIO: 'portfolio',
     WEB_STUDIO: 'web-studio',
+    DOTFILES: 'dotfiles',
 };

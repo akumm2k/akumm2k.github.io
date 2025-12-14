@@ -11,4 +11,6 @@ export const TOOLS = {
     GITHUB: 'github',
     CPP: 'cpp',
     PHP: 'php',
+    BASH: 'bash',
+    ZSH: 'zsh',
 };
