@@ -15,5 +15,7 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: .
-          # Ignore generated/config/meta folders and Liquid includes (not valid standalone HTML)
-          blacklist: .git,.github,node_modules,_includes,_includes/*,_includes/**
+          css: true
+          blacklist: .git,.github,node_modules
+          extra: >
+            --ignore _includes
