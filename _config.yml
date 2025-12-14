@@ -1,0 +1,14 @@
+markdown: kramdown
+
+exclude:
+  - node_modules
+  - ts/
+  - web-studio/
+  - graph.py
+  - "*.json"
+  - "*.ts"
+  - "*.mts"
+  - README.md
+
+source: .
+destination: ./_site
