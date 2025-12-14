@@ -44,7 +44,7 @@ const DEFAULT_TOOLS = [TOOLS.GIT];
 
 PROJ_NODES.forEach((proj) => {
   proj.addEventListener('mouseover', () => {
-    for (let tech of PROJ_STACK[proj.id].concat(DEFAULT_TOOLS)) {
+    for (const tech of PROJ_STACK[proj.id].concat(DEFAULT_TOOLS)) {
       const techElement = document.getElementById(tech);
       if (techElement !== null) {
         techElement.classList.add('hover');
@@ -52,7 +52,7 @@ PROJ_NODES.forEach((proj) => {
     }
   });
   proj.addEventListener('mouseout', () => {
-    for (let tech of PROJ_STACK[proj.id].concat(DEFAULT_TOOLS)) {
+    for (const tech of PROJ_STACK[proj.id].concat(DEFAULT_TOOLS)) {
       const techElement = document.getElementById(tech);
       if (techElement !== null) {
         techElement.classList.remove('hover');
