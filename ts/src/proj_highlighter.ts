@@ -35,7 +35,7 @@ const PROJ_STACK: Record<string, string[]> = {
 Object.keys(PROJ_STACK).forEach((project) => {
   const projElement = document.getElementById(project);
   console.assert(
-    projElement !== undefined,
+    projElement !== null,
     `${project} is not present in html`
   );
 });

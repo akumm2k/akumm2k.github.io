@@ -30,7 +30,7 @@ const PROJ_STACK = {
 };
 Object.keys(PROJ_STACK).forEach((project) => {
     const projElement = document.getElementById(project);
-    console.assert(projElement !== undefined, `${project} is not present in html`);
+    console.assert(projElement !== null, `${project} is not present in html`);
 });
 const DEFAULT_TOOLS = [TOOLS.GIT];
 PROJ_NODES.forEach((proj) => {
