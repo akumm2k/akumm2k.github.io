@@ -259,12 +259,11 @@ def traverse(
     frontier = deque([start])
 
     visited_order = []
+    get_neighbor = (
+        frontier.pop if search_type == "DFS" else frontier.popleft
+    )
     while frontier:
-        curr = (
-            frontier.pop()
-            if search_type == "DFS"
-            else frontier.popleft()
-        )
+        curr = get_neighbor()
         if curr not in explored:
             visited_order.append(curr)
             explored.add(curr)
