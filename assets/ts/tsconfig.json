@@ -8,10 +8,10 @@
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "esnext",
-    "target": "esnext",
+    "target": "es2024",
     "types": [],
     // For nodejs:
-    // "lib": ["esnext"],
+    "lib": ["esnext", "DOM"],
     // "types": ["node"],
     // and npm install -D @types/node
 
@@ -34,11 +34,10 @@
 
     // Recommended Options
     "strict": true,
-    "jsx": "react-jsx",
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
-    "skipLibCheck": true,
+    "skipLibCheck": true
   }
 }
