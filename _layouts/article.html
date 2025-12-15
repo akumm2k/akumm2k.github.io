@@ -18,13 +18,13 @@
     <div class="container">
         {% if page.date %}
             <p id="date">{{ page.date | date: "%B %d, %Y" }} • <span id="reading-time">-- min read</span></p>
+            <p id="author-top">Author: {{ page.author | default: "Aryan Kumar" }}</p>
         {% endif %}
         {{ content }}
     </div>
 
     <footer>
-        <p id="author">Author: {{ page.author | default: "Aryan Kumkar" }}</p>
-        <p id="thanks">Thanks ❤️</p>
+        <p>Let's get this 💪</p>
     </footer>
 
     <script src="/assets/js/article.js" type="module"></script>

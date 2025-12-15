@@ -5,6 +5,24 @@ document.querySelectorAll('pre code').forEach((el) => {
   hljs.highlightElement(el as HTMLElement);
 });
 
+// Move meta info (date and author) directly under the first heading
+window.addEventListener('DOMContentLoaded', () => {
+  const container = document.querySelector('.container');
+  const heading = container?.querySelector('h1');
+  const dateEl = document.getElementById('date');
+  const authorEl = document.getElementById('author-top');
+
+  if (container && heading && dateEl && authorEl) {
+    const metaWrap = document.createElement('div');
+    metaWrap.className = 'post-meta';
+
+    metaWrap.appendChild(dateEl);
+    metaWrap.appendChild(authorEl);
+
+    heading.insertAdjacentElement('afterend', metaWrap);
+  }
+});
+
 const READING_WPM = 200;
 function calculateReadingTime(): number {
   const container = document.querySelector('.container');
