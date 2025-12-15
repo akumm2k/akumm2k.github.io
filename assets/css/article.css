@@ -80,30 +80,26 @@ tr:nth-child(even) {
 #date {
     color: #7f8c8d;
     font-style: italic;
-    text-align: right;
-    float: right;
-    margin: 0 0 0.5em 1em;
+    margin: 0;
     display: inline;
 }
+#author-top {
+    color: #7f8c8d;
+    font-size: 0.95em;
+    margin: 0;
+}
+
 
 footer {
-    margin-top: 2em;
-    padding-top: 1em;
-    border-top: 1px solid #ecf0f1;
     color: #7f8c8d;
     font-size: 0.9em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
 #author {
     margin: 0;
 }
 
-#thanks {
-    margin: 0;
-}
 #reading-time {
     color: #7f8c8d;
     font-size: 0.9em;
