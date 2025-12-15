@@ -1,4 +1,10 @@
 {
+  "name": "site-ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "build:watch": "tsc -p . --watch"
+  },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@typescript-eslint/eslint-plugin": "^8.39.0",
