@@ -21,11 +21,11 @@ author: Aryan Kumar
     - [Global Code](#global-code)
     - [Local Code](#local-code)
     - [Nested Function Code](#nested-function-code)
-    - [Graphs](#graphs)
-    - [Search Algorithms](#search-algorithms)
-      - [Basic terminology](#basic-terminology)
-      - [Video Resources:](#video-resources)
-      - [Single Search Implementation for DFS and BFS](#single-search-implementation-for-dfs-and-bfs)
+  - [Graphs](#graphs)
+  - [Search Algorithms](#search-algorithms)
+    - [Basic terminology](#basic-terminology)
+    - [Video Resources:](#video-resources)
+    - [Single Search Implementation for DFS and BFS](#single-search-implementation-for-dfs-and-bfs)
 
 
 ## Python Scoping
@@ -132,7 +132,7 @@ def modify_enclosing() -> None:
 ```
 
 
-### Graphs
+## Graphs
 
 Representations:
 - Adjacency Matrix
@@ -207,10 +207,10 @@ Full list:
 '''
 ```
 
-### Search Algorithms
+## Search Algorithms
 
 
-#### Basic terminology
+### Basic terminology
 
 - Node: A point in the graph (e.g., A, B, C, etc.)
   - start node: where the search begins
@@ -233,7 +233,7 @@ Full list:
   - Pick a starting node, and explore all its neighbors before moving to the next level of neighbors.
   - exploration order captured by a queue (FIFO)
 
-#### Video Resources:
+### Video Resources:
 
 Quick Visualization (Short):
 {% include youtube.html id="L1vGm2_cPU0" %}
@@ -244,7 +244,7 @@ In-Depth Visualization (DFS):
 In-Breadth Visualization (BFS):
 {% include youtube.html id="xlVX7dXLS64" %}
 
-#### Single Search Implementation for DFS and BFS
+### Single Search Implementation for DFS and BFS
 
 ```py
 from collections import deque
