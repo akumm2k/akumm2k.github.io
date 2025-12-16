@@ -3,6 +3,7 @@ layout: article
 title: Programming Notes
 date: 2025-12-14
 author: Aryan Kumar
+description: Notes on Python scoping, graph representations, and search algorithms.
 ---
 <style>
     img {
